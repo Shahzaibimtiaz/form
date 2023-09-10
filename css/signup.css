@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 7em;
+}
+
+
+header {
+    background-color: #101823;
+    /* width: 100%;
+    position: absolute; 
+    margin-top: 50px;  */
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header img {
+    width: 220px;
+    margin: 20px 50px;
+}
+header p {
+    float: right;
+    margin: 22px 60px;
+    padding: 5px;
+}
+header p a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+header p a:hover {
+    color: rgb(194, 194, 194);
+}
+
+
+
+.container{
+    width: 35%;
+    box-shadow: 0px 4px 10px #898989;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#form {
+    padding: 20px;
+}
+#form h2 {
+    font-size: 32px;
+    margin-top: 2px;
+}
+#form-subtitle{
+    margin: 8px 0px 12px 0px;
+}
+#form-name {
+    justify-content: space-between;
+    display: flex;
+}
+#first-name {
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 8px 10px 0px;
+}
+#last-name {
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0px 10px 8px;
+}
+
+#form-subtitle a {
+    text-decoration: none;
+}
+#form-forgot {
+    margin: 5px 0px 15px 0px;
+    color: #f04438;
+    font-weight: bold;
+}
+#email, #confirm-email, #password, #confirm-password {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+#termsandcondition{
+    margin: 10px 0px;
+}
+#form-signup{
+    background-color: #f04438;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0px;
+}
+#form-or {
+    text-align: center;
+    margin: 10px 0px;
+    color: #898989;
+}
+#form-Sociallink {
+    justify-content: center;
+    display: flex;
+    margin: 10px 0px 0px 0px;
+}
+#form-Sociallink img {
+    width: 40px;
+    margin: 10px;
+}
+
+
+
+
+footer {  
+    /* width: 100%;
+    display: flex;
+    margin-top: 50px;
+    bottom: 0; */
+
+    position: absolute;
+    background-color: #101823;
+    display: flex;
+    margin-top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+#footer-logo img {
+    width: 150px;
+    margin: 15px 30px 15px 80px;
+}
+nav {
+    margin: 16px 0px;
+}
+nav a {
+    margin: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+nav a:hover {
+    color: rgb(194, 194, 194);
+}
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 330px) {
+
+    .container{
+        width: 88%;
+    }
+
+    #form {
+        margin-bottom: 175px;
+        justify-content: center;
+    }
+    #form h2 {
+        font-size: 1.2em;
+    }
+    #form-subtitle{
+        font-size: 0.8em;
+    }
+    #first-name {
+        height: 35px;
+        font-size: 0.75em;
+        margin: 8px 5px 5px 0px;
+    }
+    #last-name {
+        height: 35px;
+        font-size: 0.75em;
+        margin: 8px 0px 5px 5px;
+    }
+    #email, #confirm-email, 
+    #password, #confirm-password {
+        height: 35px;
+        font-size: 0.75em;
+        margin: 5px 0px;
+    }
+    #termsandcondition label {
+        font-size: 0.75em;
+    }
+    #form-signup{
+        font-size: 0.8em;
+        width: 80%;
+        margin: 8px 25px;
+    }
+    #form-or {
+        margin: 5px 0px;
+        font-size: 0.8em;
+    }
+    #form-Sociallink img {
+        width: 28px;
+        margin-top: 8px;
+    }
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 330px) {
+
+    .container{
+        width: 85%;
+    }
+    
+    #form {
+        margin-bottom: 175px;
+    }
+    #form h2 {
+        font-size: 1.5em;
+    }
+    #form-subtitle{
+        font-size: 0.9em;
+    }
+    #first-name {
+        height: 40px;
+        font-size: 0.9em;
+        margin: 8px 8px 8px 0px;
+    }
+    #last-name {
+        height: 40px;
+        font-size: 0.9em;
+        margin: 8px 0px 8px 8px;
+    }
+    #email, #confirm-email, 
+    #password, #confirm-password {
+        height: 40px;
+        font-size: 0.9em;
+        margin: 8px 0px;
+    }
+    #termsandcondition label {
+        font-size: 0.9em;
+    }
+    #form-signup{
+        font-size: 0.9em;
+    }
+    #form-or {
+        font-size: 0.9em;
+    }
+    #form-Sociallink img {
+        width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .container{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    .container{
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Header and Footer Responsive */
+
+@media screen and (max-width: 330px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 180px;
+        align-items: center;
+        margin: auto;
+        padding: 12px;
+        display: block;
+    }
+    header p a {
+        font-size: 16px;
+        display: none;
+    }
+
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+        display:inline-block;
+        width:100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 330px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 200px;
+        align-items: center;
+        margin: auto;
+        padding: 12px;
+        display: block;
+    }
+    header p a {
+        font-size: 16px;
+        display: none;
+    }
+
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+        display:inline-block;
+        width:100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+
+    header img {
+        width: 180px;
+        margin: 20px 30px;
+    }
+    header p {
+        margin: 22px 40px;
+    }
+    header p a {
+        font-size: 16px;
+    }
+    
+    footer {
+        margin-top: 100px;
+    }
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 7em;
+}
+
+header {
+    background-color: #101823;
+    /* width: 100%;
+    position: absolute; 
+    margin-top: 50px;  */
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+header img {
+    width: 220px;
+    margin: 20px 50px;
+}
+header p {
+    float: right;
+    margin: 22px 60px;
+    padding: 5px;
+}
+header p a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+header p a:hover {
+    color: rgb(194, 194, 194);
+}
+
+
+.container{
+    width: 32%;
+    box-shadow: 0px 4px 10px #898989;
+    margin: auto;
+    margin-top: 60px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    margin-top: 50px; */
+}
+
+#form {
+    padding: 20px;
+}
+#form h2 {
+    font-size: 32px;
+    margin-top: 2px;
+}
+#form-subtitle{
+    margin: 8px 0px 12px 0px;
+}
+#form-forgot {
+    margin: 5px 0px 15px 0px;
+    color: #f04438;
+    font-weight: bold;
+}
+#email, #password {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+#form-signin{
+    background-color: #f04438;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+#form-or {
+    text-align: center;
+    margin: 10px 0px;
+    color: #898989;
+}
+#signingoogle {
+    display: flex;
+}
+#signingoogle img {
+    width: 30px;
+    position: absolute;
+    margin: 8px;
+    margin-left: 10px;
+}
+#form-signinapple{
+    background-color: white;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 20px;
+    width: 100%;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+#new-join {
+    text-align: center;
+    font-size: 17px;
+    margin: 35px 0px 10px 0px;
+}
+#new-join a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+footer {
+    /* width: 100%;
+    display: flex;
+    margin-top: 50px;
+    bottom: 0; */
+
+    position: absolute;
+    background-color: #101823;
+    display: flex;
+    margin-top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#footer-logo img {
+    width: 150px;
+    margin: 15px 30px 15px 80px;
+}
+nav {
+    margin: 16px 0px;
+}
+nav a {
+    margin: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+nav a:hover {
+    color: rgb(194, 194, 194);
+}
+
+
+
+
+
+
+/* Responsive */
+
+
+
+@media screen and (max-width: 375px) {
+    #signingoogle img {
+        width: 25px;
+        margin: 10px;
+    }
+    #form-signinapple{
+        font-size: 14px;
+    }   
+
+    .container{
+        width: 85% !important;
+        margin-top: 50px;
+    }
+
+    #form h2 {
+        font-size: 1.2em;
+    }
+    #form-subtitle{
+        margin: 8px 0px 10px 0px;
+        font-size: 0.75em;
+    }
+    #form-forgot {
+        font-size: 0.7em;
+    }
+    #email, #password {
+        height: 40px;
+        font-size: 12px;
+        margin: 8px 0px;
+    }
+    #form-signin{
+        font-size: 0.9em;
+    }
+    #form-or {
+        font-size: 0.9em;
+    }
+    #signingoogle {
+        display: flex;
+    }
+    #signingoogle {
+        display: flex;
+        justify-content: center;
+        
+    }
+    #signingoogle img {
+        width: 30px;
+        position: absolute;
+        margin-top: 5px;
+    }
+    #form-signinapple{
+        display: none;
+        border: none;
+        border-radius: 0px;
+    }
+    #new-join {
+        text-align: center;
+        font-size: 12px;
+        margin: 50px 0px 10px 0px;
+    }
+    #new-join a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) and (min-width: 375px) {
+    #signingoogle img {
+        width: 25px;
+        margin: 10px;
+    }
+    #form-signinapple{
+        font-size: 14px;
+    }   
+
+    #form h2 {
+        font-size: 1.5em;
+        /* margin-top: 2px; */
+    }
+    #form-subtitle{
+        margin: 8px 0px 10px 0px;
+        font-size: 0.85em;
+    }
+    #form-forgot {
+        font-size: 0.8em;
+    }
+    #email, #password {
+        height: 40px;
+        font-size: 13px;
+        margin: 8px 0px;
+    }
+    #form-signin{
+        font-size: 0.9em;
+    }
+    #form-or {
+        font-size: 0.9em;
+    }
+    #signingoogle {
+        display: flex;
+    }
+
+    #signingoogle {
+        display: flex;
+        justify-content: center;
+    }
+
+    #signingoogle img {
+        width: 30px;
+        position: absolute;
+        margin-top: 5px;
+    }
+    #form-signinapple{
+        display: none;
+        border: none;
+        border-radius: 0px;
+    }
+    #new-join {
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 0px 10px 0px;
+    }
+    #new-join a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 80%;
+    }
+
+    #form {
+        padding: 20px;
+        margin-bottom: 185px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    .container{
+        width: 40%;
+    }
+}
+
+
+
+
+
+/* Header and Footer Responsive */
+
+@media screen and (max-width: 330px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 180px;
+        align-items: center;
+        margin: auto;
+        padding: 12px;
+        display: block;
+    }
+    header p a {
+        font-size: 16px;
+        display: none;
+    }
+
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+        display:inline-block;
+        width:100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 330px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 200px;
+        align-items: center;
+        margin: auto;
+        padding: 12px;
+        display: block;
+    }
+    header p a {
+        font-size: 16px;
+        display: none;
+    }
+
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+        display:inline-block;
+        width:100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+
+    header img {
+        width: 180px;
+        margin: 20px 30px;
+    }
+    header p {
+        margin: 22px 40px;
+    }
+    header p a {
+        font-size: 16px;
+    }
+    
+    footer {
+        margin-top: 100px;
+    }
+    #footer-logo img {
+        display: none;
+    }
+    nav {
+        margin: 16px auto;
+    }
+    nav a {
+        font-size: 12px;
+    }
+
+}
